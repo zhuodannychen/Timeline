@@ -1,0 +1,251 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>Timeline</title>
+	<style>
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+		@import url('https://fonts.googleapis.com/css?family=Pacifico');
+		@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+		body {
+            margin: 0;
+            background: #ffffff;
+        }
+        h2 {
+			font-family: 'Pacifico', cursive;
+		}
+        .bg {
+            background-image: linear-gradient(#83a4d4, #b6fbff);
+            height: 100%;
+            width: 100%;
+        }
+        .title {
+            margin: 0 auto;
+        }
+        .title .scroll {
+            position: absolute;
+            margin-top: 50px;
+            left: 48%;
+            bottom: 20px;
+        }
+        .title h1 {
+            position: absolute;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            top: 20%;
+            left: 0;
+            right: 0;
+			font-family: 'Roboto', sans-serif;
+            font-size: 50pt;
+		}
+        .title a {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            display: inline-block;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            color: #000;
+            font : normal 400 20px/1 'Roboto', sans-serif;
+            letter-spacing: .1em;
+            text-decoration: none;
+        }
+        
+        #section a {
+            padding-top: 70px;
+        }
+        #section a span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            margin-left: -12px;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
+            -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+            -webkit-animation: sdb06 1.5s infinite;
+            animation: sdb06 1.5s infinite;
+            box-sizing: border-box;
+        }
+        @-webkit-keyframes sdb06 {
+            0% {
+                -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+                opacity: 0;
+            }
+        }
+        @keyframes sdb06 {
+            0% {
+                transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+                opacity: 0;
+            }
+        }
+        /*
+        .wow {
+            position: relative;
+            font-size: 25pt;
+            font-family: 'Roboto', sans-serif;
+            margin: 40px;
+            margin-left: 120px;
+            animation-duration: 2.5s;
+            color: #434E3C;
+        }
+        */
+        .year {
+            position: relative;
+            font-size: 25pt;
+            font-family: 'Roboto', sans-serif;
+            margin: 30px;
+            margin-left: 80px;
+            animation-duration: 2.5s;
+            color: #434E3C;
+        }
+        .month {
+            position: relative;
+            font-size: 20pt;
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            margin-left: 120px;
+            animation-duration: 2.5s;
+            color: #434E3C;
+        }
+        .elements {
+            margin-left: 0;
+        }
+        .list {
+            font-size: 15pt;
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            margin-left: 140px;
+        }
+        .list a {
+            text-decoration: none;
+            color: #83a4d4;
+            transition: .3s;
+        }
+        .list a:hover {
+            opacity: .5;
+        }
+    </style>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            offset: 50,
+        })
+        wow.init();
+    </script>
+</head>
+<body>
+    <div class="bg">
+        <div id="section" class="title">
+            <h1 class="animated bounceInDown">Timeline of How I Learned Programming</h1>
+            <a class="scroll animated bounceInUp"><span></span>Scroll</a>
+        </div>
+    </div>
+    
+    <h3 class="wow slideInUp year" data-wow-duration="0.5s">2018</h3>
+    <ul>
+        <li class="wow slideInUp month" data-wow-duration="0.5s">September</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Took AP Computer Science Principles.</li>
+            <li class="list">Learned basic Javascript through <a href="https://code.org" target="_blank">code.org</a>.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">April</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Learned basics of HTML and CSS.</li>
+            <li class="list">Learned basics of C++.</li>
+        </ul>
+    </ul>
+
+    <h3 class="wow slideInUp year" data-wow-duration="0.5s">2019</h3>
+    <ul>
+        <li class="wow slideInUp month" data-wow-duration="0.5s">September</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Took AP Computer Science A.</li>
+            <li class="list">Learned Java.</li>
+            <li class="list">Participated in competitive programming competitions.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">October</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Learned some machine learning concepts like CNN and RNN with PyTorch.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">December</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Created a very simple website out of HTML, CSS, and JS.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">January</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Practiced on Codeforces.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">March</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Participated in <a href="http://hpcodewars.org" target="_blank">HP CodeWars Houston</a>.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">April</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Placed 2nd at <a href="https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest/code-quest-fort-worth.html" target="_blank">Lockheed Martin CodeQuest</a> at Fort Worth.</li>
+            <li class="list">Participated in my first hackathon at EarthxHack.</li>
+            <li class="list">Learned front end web development framework: Vue Js.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">May</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Completed <a href="https://www.codecademy.com/learn" target="_blank">Codeacademy</a> lessons on HTML, CSS, and React.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">June</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Studied more web development.</li>
+            <li class="list">Tried Gatsby Js, but I didn't know how to use it. : )</li>
+            <li class="list">Built personal website with Vue Js.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">October</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Studied algorithms on <a href="https://cp-algorithms.com/" target="_blank">E-Maxx</a> (Very good resource!).</li>
+            <li class="list">Read <a href="https://cpbook.net/" target="_blank">Competitive Programming 3</a> by Steven Halim and Felix Halim (Very good book!).</li>
+        </ul>
+    </ul>
+    <h3 class="wow slideInUp year" data-wow-duration="0.5s">2020</h3>
+    <ul>
+        <li class="wow slideInUp month" data-wow-duration="0.5s">February</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Hosted <a href="https://www.hackerrank.com/plano-west-wolf-invitational-advanced-2020" target="_blank">Plano West Wolf Invitational Contest</a>.</li>
+        </ul>
+
+        <li class="wow slideInUp month" data-wow-duration="0.5s">March</li>
+        <ul class="wow slideInUp elements" data-wow-duration="0.5s">
+            <li class="list">Found good place to learn web development for free! <a href="https://scrimba.com/" target="_blank">Scrimba</a>.</li>
+        </ul>
+    </ul>
+
+    <h3 class="wow slideInUp year" data-wow-duration="0.5s">More to Come!</h3>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/css3-animate-it.js"></script>
+</body>
+
+</html>
