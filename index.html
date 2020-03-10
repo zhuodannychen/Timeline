@@ -103,7 +103,6 @@
             font-family: 'Roboto', sans-serif;
             margin: 30px;
             margin-left: 80px;
-            animation-duration: 2.5s;
             color: #434E3C;
         }
         .month {
@@ -112,7 +111,6 @@
             font-family: 'Roboto', sans-serif;
             margin: 20px;
             margin-left: 100px;
-            animation-duration: 2.5s;
             color: #434E3C;
         }
         .elements {
@@ -123,6 +121,8 @@
             font-family: 'Roboto', sans-serif;
             margin: 10px;
             margin-left: 120px;
+            line-height: 1.5;
+            color: #434E3C;
         }
         .list a {
             text-decoration: none;
@@ -132,14 +132,18 @@
         .list a:hover {
             opacity: .5;
         }
+
     </style>
     <script src="js/wow.min.js"></script>
     <script>
+
         wow = new WOW({
-            offset: 50,
-            mobile: false,
+            offset: 0,
+            mobile: true,
         })
         wow.init();
+
+        
     </script>
 </head>
 <body>
